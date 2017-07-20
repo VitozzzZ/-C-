@@ -25,9 +25,9 @@ using namespace std;
 int main()
 {
     int sum=0,a[100]={0};
-    for(int i=2;i<100;i++)
+    for(int i=2;i<100;i++)//优化1 i<sqrt(100.0)就好了
     {
-        sum=i;
+        sum=i;//优化2 此行后面加上if(a[sum]==0)
         while(sum<100)
         {
             sum=sum+i;
