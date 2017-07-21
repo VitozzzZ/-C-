@@ -1,0 +1,20 @@
+//输入一个英文句子（不超过80个单词），每二个单词之间用空格分开，输出单词数
+#include <iostream>
+using namespace std;
+int main()
+{
+    char str[80];
+    int num=0,flag=0;
+    cin.getline(str,80);
+    for(int i=0;str[i]!='\0';i++)
+    {
+        if(str[i]==' ')
+            flag=0;
+        else if(flag==0)
+        {
+            flag=1;num++;
+        }
+    }
+    cout<<"字符串中有："<<num<<"个单词"<<endl;
+    return 0;
+}
