@@ -49,10 +49,9 @@ int main()
     {
         cout<<id[i]<<endl;
     }
-    cout << n - maxDiffIndex - 1 << endl;
-    
     
     //输出繁殖率低的组
+    cout << n - maxDiffIndex - 1 << endl;
     for (int i = n - 1; i >= maxDiffIndex + 1; i--)
     {
         cout << id[i] << endl;
